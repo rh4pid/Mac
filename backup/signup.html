@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title> 
+        <!-- style tag -->
+    <link rel="stylesheet" href="signup.css">
+ <!-- GOOGLE FONTS GOOGLE FONTS GOOGLE FONTS GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+
+    <!-- ICONS FROM FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- ICONS FROM BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <!-- HEADER DONE FOR NOW TIMESTAMP 25/01/25 -->
+    <header>
+        <div id="div-logo">
+            <img src="../LandingPage/logo.jpg" alt="" id="logo">
+            <span class="orbitron-discover logo-name">Orbit</span>
+        </div>
+    </header>
+    
+    <!-- MAIN DONE FOR NOW, TIMESTAMP 29/01/25 -->
+    <main>
+        <div class="main-div">
+            <div class="slide-show active">
+                <h1 class="slide-show-ttl orbitron-discover">Welcome To</h1>
+                <h1 class="slide-show-ttl orbitron-discover">ORBIT</h1>
+                <p class="slide-show-txt ">Have you been stressed looking for a service requester around your locality?</p>
+                <p class="slide-show-txt ">Sign up now and discover a wide range of adroit service providers around you</p>
+                <h2 class="slide-show-btn permanent-marker-regular">Sign up now <i class="fa-solid fa-arrow-right"></i></h2>
+            </div>
+            <div class="slide-show">
+                <h1 class="slide-show-ttl orbitron-discover">Hey There!</h1>
+                <p class="slide-show-sub-ttl orbitron-discover">Welcome To Orbit</p>
+                <p class="slide-show-txt">Are you a skilled artisan trying to expand your reach? 
+                    Are you looking for a better ways to manage your funds?</p>
+                <p class="slide-show-txt">Or do want to properly schedule your workloads?</p>
+                <p class="slide-show-txt">Sign up now for these and more!!</p>
+                <h2 class="slide-show-btn permanent-marker-regular">Sign up now <i class="fa-solid fa-arrow-right"></i></h2>
+            </div>
+        </div>
+
+        <div class="main-div1">
+            <div class="signup-container">
+                <div class="user-tabs">
+                    <div class="tab_btn active orbitron-discover">Service requester</div>
+                    <div class="tab_btn orbitron-discover">Service Provider</div>
+                </div>
+
+                <div class="user-contents">
+                    <div class="content">
+                        <div class="body1">
+                            <div class="container">
+                                <h2 class="container-txt orbitron-discover">Create An Account</h2>
+                                <div class="input-group name-group">
+                                    <input type="text" placeholder="Firstname">
+                                    <input type="text" placeholder="Lastname">
+                                </div>
+                                <div class="input-group password-group">
+                                    <input type="email" placeholder="Email">
+                                    <input type="password" placeholder="Password">
+                                    <input type="password" placeholder="Confirm password">
+                                </div>
+                                <button class="submit-btn">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content active">
+                        <div class="artisan">
+                            <div class="container">
+                                <ul class="progressBar">
+                                    <li id="personal" class="active"></li>
+                                    <li id="certification"></li>
+                                    <li id="verification"></li>
+                                    <li id="payment"></li>
+                                    <li id="confirm"></li>
+                                </ul>
+                                <div class="form-group form-active">
+                                    <div class="row">
+                                        <h2 class="form-title">Peresonal Details</h2>
+                                        <h3 class="form-step">Step 1 - 5</h3>
+                                    </div>
+                                    <div class="names">
+                                        <div class="form-control">
+                                            <input type="text" id="firstName" placeholder="First Name">
+                                        </div>
+                        
+                                        <div class="form-control">
+                                            <input type="text" id="lastName" placeholder="Last Name">
+                                        </div>
+                                    </div>
+                                    <div class="form-control">
+                                        <input type="email" id="email" placeholder="email">
+                                    </div>
+                                    <div class="form-control">
+                                        <input type="tel" id="phone" placeholder="phone">
+                                    </div>
+                                    <div class="form-control">
+                                        <select id="age" name="age" class="select">
+                                            <option>Select your age range</option>
+                                            <option value="18-30">18-30</option>
+                                            <option value="31-45">31-45</option>
+                                            <option value="46-60">46-60</option>
+                                            <option value="60+">60+</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-control">
+                                        <select id="gender" name="gender" class="select">
+                                            <option>Gender</option>
+                                            <option value="Male">Male</option>
+                                            <option value="Female">Female</option>
+                                        </select>
+                                    </div>
+                                    <button class="next">Next</button>
+                                </div>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <h2 class="form-title">Certification</h2>
+                                        <h3 class="form-step">Step 2 - 5</h3>
+                                    </div>
+                                    <div class="form-control">
+                                        <label for="service">Service being Provided</label>
+                                        <input type="text" id="service" placeholder="eg. Electrician, Plumber">
+                                    </div>
+                                    <div class="form-control">
+                                        <label for="experince">Yrs of Experience</label>
+                                        <select id="experince" name="experince" class="select">
+                                            <option>Select years of experience</option>
+                                            <option value="5less">less than 5yrs</option>
+                                            <option value="5-10">5yr - 10</option>
+                                            <option value="10up">above 10yrs</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-control">
+                                        <label for="education">Educational Bacground</label>
+                                        <select id="education" name="education" class="select" required>
+                                            <option>Select your Educational Bacground</option>
+                                            <option value="none">None</option>
+                                            <option value="basic">Basic Education</option>
+                                            <option value="secondary">Secondary Education</option>
+                                            <option value="tertiary">Tertiary Education</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-control">
+                                        <label for="cos">Certification of Service</label>
+                                        <select id="cos" name="cos" class="select">
+                                            <option>Are you certified</option>
+                                            <option value="no">No</option>
+                                            <option value="yes">Yes</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-control">
+                                        <label for="cos">Proof of Certification</label>
+                                        <input type="file" placeholder="upload a picture of certificate">
+                                    </div>
+                                    <div class="button-control">
+                                        <button class="Prev">Previous</button>
+                                        <button class="next">Next</button>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <h2 class="form-title">Verification</h2>
+                                        <h3 class="form-step">Step 3 - 5</h3>
+                                    </div>
+                                    <div class="form-control">
+                                        <label for="ghanaFront" id="gf">Upload Ghana card Front</label>
+                                        <input type="file" id="ghanaFront">
+                                    </div>
+                                    <div class="form-control">
+                                        <label for="fb">Facebook</label>
+                                        <input type="url" id="fb">
+                                    </div>
+                                    <div class="form-control">
+                                        <label for="x">Twitter</label>
+                                        <input type="url" id="x">
+                                    </div>
+                                    <div class="form-control">
+                                        <label for="yt">Youtube</label>
+                                        <input type="url" id="yt">
+                                    </div>
+                                    <div class="button-control">
+                                        <button class="Prev">Previous</button>
+                                        <button class="next">Submit</button>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <h2 class="form-title">Finish</h2>
+                                        <h3 class="form-step">Step 4 - 5</h3>
+                                    </div>
+                                    <div class="success">
+                                        <h2><strong>SUCCESS!</strong></h2>
+                                        <h2>Thanks for Signup!</h2>
+                                        <i class="fa-regular fa-circle-check"></i>
+                                        <p>We will connect you soon</p>
+                                    </div>
+                                    <div class="button-control">
+                                        <button class="Prev">Previous</button>
+                                        <button class="next">Next</button>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <h2 class="form-title">Finish</h2>
+                                        <h3 class="form-step">Step 4 - 4</h3>
+                                    </div>
+                                    <div class="success">
+                                        <h2><strong>SUCCESS!</strong></h2>
+                                        <h2>Thanks for Signup!</h2>
+                                        <i class="fa-regular fa-circle-check"></i>
+                                        <p>We will connect you soon</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+     <!-- FOOTER DONE FOR NOW TIMESTAMP 25/01/25 -->
+    <footer>
+        <div class="container">
+            <div class="footer-brand">
+                <h1>ORBIT</h1>
+                <p>We connect service providers and service requesters easily while ensuring the safety of both the customers and the artisans.</p>
+                <ul class="contact-info">
+                    <li><i class="fa-solid fa-phone"></i> +1 23 456 789</li>
+                    <li><i class="fa-regular fa-envelope"></i> <a href="mailto:support@orbit.com">support@orbit.com</a></li>
+                    <li><i class="fa-solid fa-location-crosshairs"></i> 123 Orbit Lane, CO, USA</li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">How It Works</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">For Service Providers</a></li>
+                        <li><a href="#">Safety & Trust</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-resources">
+                <div>
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul> 
+                </div>
+            </div>
+            
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook fa-2xl"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter fa-2xl"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+                    <a href="#"><i class="fa-regular fa-envelope fa-2xl"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 ORBIT. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <!-- Script tag -->
+    <script src="signup.js"></script>
+</body>
+</html>
